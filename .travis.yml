@@ -11,7 +11,4 @@ gemfile:
  - Gemfile
 
 before_install:
- - "rm ${BUNDLE_GEMFILE}.lock"
  - "gem update bundler"
-
-before_script: "bundle update"
