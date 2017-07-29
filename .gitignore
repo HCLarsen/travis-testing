@@ -1,10 +1,10 @@
 .bundle/
 log/*.log
 pkg/
-test/dummy/db/*.sqlite3
-test/dummy/db/*.sqlite3-journal
-test/dummy/log/*.log
-test/dummy/tmp/
+test/dummy5/db/*.sqlite3
+test/dummy5/db/*.sqlite3-journal
+test/dummy5/log/*.log
+test/dummy5/tmp/
 
 # Ignore all the .DS_Store files
 .DS_Store

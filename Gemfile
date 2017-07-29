@@ -16,3 +16,6 @@ gemspec
 # gem "rails", "~>5.1.1"
 gem "devise", "~> 4"
 gem 'byebug'
+
+# Sets an environment variable to be used when running tests
+ENV["RAILS_VERSION"] = "5.1"

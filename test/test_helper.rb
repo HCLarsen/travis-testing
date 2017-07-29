@@ -1,5 +1,9 @@
-require File.expand_path("../../test/dummy/config/environment.rb", __FILE__)
-ActiveRecord::Migrator.migrations_paths = [File.expand_path("../../test/dummy/db/migrate", __FILE__)]
+puts "Rails: #{rails_version = ENV["RAILS_VERSION"]}"
+
+if rails_version >= "5"
+  require File.expand_path("../../test/dummy5/config/environment.rb", __FILE__)
+  ActiveRecord::Migrator.migrations_paths = [File.expand_path("../../test/dummy5/db/migrate", __FILE__)]
+end
 require "rails/test_help"
 
 # Filter out Minitest backtrace while allowing backtrace from other libraries
