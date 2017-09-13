@@ -9,7 +9,9 @@ gemfile:
  - gemfiles/rails-5.0.gemfile
  - Gemfile
 
-before_install: "gem update bundler"
+before_install:
+  - "gem install bundler --pre"
+  - "gem update bundler"
 
 before_script: "bundle update"
 
