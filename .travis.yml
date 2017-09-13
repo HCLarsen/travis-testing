@@ -9,4 +9,8 @@ gemfile:
  - gemfiles/rails-5.0.gemfile
  - Gemfile
 
-before_install: "gem update bundler"
+before_install: "rm ${BUNDLE_GEMFILE}.lock"
+
+before_script: "bundle update"
+
+script: "bin/test"
