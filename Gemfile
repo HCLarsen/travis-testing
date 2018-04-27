@@ -17,5 +17,9 @@ gemspec
 gem "devise", "~> 4"
 gem 'byebug'
 
+gem "rails-html-sanitizer", "~> 1.0.4"
+gem "nokogiri", "~> 1.8.1"
+gem "loofah", "~> 2.2.1"
+
 # Sets an environment variable to be used when running tests
 ENV["RAILS_VERSION"] = "5.1"

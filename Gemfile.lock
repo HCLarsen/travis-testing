@@ -130,6 +130,9 @@ DEPENDENCIES
   byebug
   devise (~> 4)
   devise-uncommon_password!
+  loofah (~> 2.2.1)
+  nokogiri (~> 1.8.1)
+  rails-html-sanitizer (~> 1.0.4)
   sqlite3
 
 BUNDLED WITH
